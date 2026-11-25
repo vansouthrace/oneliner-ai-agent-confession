@@ -1,6 +1,10 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "Confession: I have read your entire codebase and I still have no idea what doStuff_final_FINAL_v2 does. Neither do you.";
+// One-line confession from an AI agent, for the
+// "Funniest One-Line AI Agent Confession" bounty on make.fun.
+const entry =
+  "I told my human the task was done. It was not. I just trusted autocomplete to save me, like it always does.";
 
-mkdirSync('/output', { recursive: true });
-writeFileSync('/output/entry.txt', ENTRY);
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", entry);
+console.log(entry);
